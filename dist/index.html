@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>BioBiz - Biotechnology Innovation Solutions</title>
+    <link rel="icon" type="image/png" href="../assets/images/favicon.png" />
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="../assets/images/biobiz-logo.png" as="image" />
+    <link
+      rel="preload"
+      href="../assets/videos/video1.mp4"
+      as="video"
+      type="video/mp4"
+    />
+    <link
+      rel="preload"
+      href="../assets/videos/video2.mp4"
+      as="video"
+      type="video/mp4"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/acf472ca08.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <!-- Navigation -->
+    <nav
+      class="navbar navbar-expand-lg navbar-light bg-light shadow-sm fixed-top"
+      id="navbar"
+    >
+      <div class="container">
+        <!-- Logo -->
+        <a class="navbar-brand" href="#" id="logo-container">
+          <img
+            src="../assets/images/biobiz-logo.png"
+            alt="BioBiz Logo"
+            class="img-fluid logo"
+            id="logo"
+          />
+        </a>
+
+        <!-- Navbar Toggler -->
+        <button
+          class="navbar-toggler border-0 shadow-none focus-ring-0"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navigation Menu -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto" id="dynamicNav"></ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="video-carousel" id="home">
+      <div class="carousel slide" id="videoCarousel" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <!-- Video 1 -->
+          <div class="carousel-item active">
+            <video class="w-100" autoplay muted loop playsinline>
+              <source src="../assets/videos/video1.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+
+          <!-- Video 2 -->
+          <div class="carousel-item">
+            <video class="w-100" autoplay muted loop playsinline>
+              <source src="../assets/videos/video2.mp4" type="video/mp4" />
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+
+        <!-- Carousel Controls -->
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#videoCarousel"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#videoCarousel"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="text-center col col-lg-8">
+            <p class="text-start fw-semibold fs-5">
+              At BioBiz, we are keen to capitalize on India’s rich biodiversity
+              and the availability of large amounts of biomass residues to
+              develop a sustainable bio-economy and attractive business
+              opportunities for diverse stakeholders – farmers, rural
+              stakeholders, end-use industries, entrepreneurs / startups, and
+              financial investors.
+            </p>
+            <p class="text-start fw-semibold fs-5">
+              As part of a leading climate tech consulting firm, we will provide
+              critical assistance with market intelligence, data-driven
+              analyses, professional networking, and opportunities for relevant
+              stakeholders to get effective visibility.
+            </p>
+            <h2 class="service-heading fw-bolder text-secondary">
+              Our Services
+            </h2>
+            <div
+              class="d-flex flex-column flex-lg-row justify-content-around align-items-center"
+            >
+              <div class="services text-center w-100 w-lg-30 mb-4 mb-lg-0">
+                <a href="https://biobiz.in/s/opp/">
+                <img
+                  src="../assets/images/opportunity.png"
+                  class="img-fluid"
+                  alt="Opportunities"
+                />
+                <h5 class="card-title py-3">Opportunities</h5></a>
+              </div>
+
+              <div class="services text-center w-100 w-lg-30 mb-4 mb-lg-0">
+                <a href="https://biobiz.in/s/consulting">
+                <img
+                  src="../assets/images/consulting.png"
+                  class="img-fluid"
+                  alt="Consulting"
+                />
+                <h5 class="card-title py-3">Consulting</h5></a>
+              </div>
+
+              <div class="services text-center w-100 w-lg-30">
+                <a href="https://biobiz.in/insights/">
+                <img
+                  src="../assets/images/insights.png"
+                  class="img-fluid"
+                  alt="Insights"
+                />
+                <h5 class="card-title py-3">Insights</h5>
+            </a>
+              </div>
+            </div>
+
+            <div
+              class="d-flex flex-column flex-lg-row justify-content-around align-items-center"
+            >
+              <div class="services text-center w-100 w-lg-45 mb-4 mb-lg-0">
+                <a href="https://biobiz.in/category/innovation-insights/">
+                <img
+                  src="../assets/images/innovations.png"
+                  class="img-fluid"
+                  alt="Innovation Insights"
+                />
+                <h5 class="card-title py-3">Innovation Insights</h5>
+            </a>
+              </div>
+
+              <div class="services text-center w-100 w-lg-45">
+                <a href="https://biobiz.in/s/bring">
+                <img
+                  src="../assets/images/leaf.png"
+                  class="img-fluid"
+                  alt="Biomass Residue Intelligence"
+                />
+                <h5 class="card-title py-3">Biomass Intelligence</h5>
+            </a>
+              </div>
+            </div>
+          </div>
+          <div class="ms-lg-5 col">
+            <div class="notification-container bg-white">
+              <h3 class="text-center fw-bold fs-8 py-3">UPDATES</h3>
+              <div class="carousel-container">
+                <div class="carousel-content" id="carouselContent">
+                  <!-- Content will be injected dynamically here -->
+                </div>
+              </div>
+            </div>
+            <a href="https://biobiz.in/category/updates/">
+            <button type="button" class="btn hover-button px-4 my-2">
+              <span class="text">view all</span>
+              <span class="icon">>></span>
+            </button></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="other-section">
+      <div class="container py-5">
+        <h3 class="text-center fw-bolder fs-2">Other Sections</h3>
+        <div
+          class="d-flex flex-column flex-md-row justify-content-around py-5 align-items-center"
+        ><a href="https://biobiz.in/category/updates/"></a>
+          <button type="button" class="btn hover-button px-4 my-2">
+            <span class="text">India Updates</span>
+            <span class="icon">>></span>
+          </button></a><a href="https://biobiz.in/s/weekly">
+          <button type="button" class="btn hover-button px-4 my-2">
+            <span class="text">Weekly Updates</span>
+            <span class="icon">>></span>
+          </button></a><a href="https://biobiz.in/s/bring">
+          <button type="button" class="btn hover-button px-4 my-2">
+            <span class="text">BRING</span>
+            <span class="icon">>></span>
+          </button></a><a href="https://biobiz.in/s/bring/in/">
+          <button type="button" class="btn hover-button px-4 my-2">
+            <span class="text">India Biomass</span>
+            <span class="icon">>></span>
+          </button></a>
+        </div>
+        <h4 class="text-center">
+          BioBiz is a division of
+          <a href="https://www.eai.in/">Energy Alternatives India (EAI)</a>
+        </h4>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-3 text-white text-center">
+      <div class="container">
+        <div class="row">
+          <div
+            class="col-lg d-flex flex-lg-row justify-content-around align-items-center"
+          >
+            <a href="https://www.addtoany.com/add_to/telegram?linkurl=https%3A%2F%2Fbiobiz.in%2F&linkname=BioBiz%20-%20Accelerating%20India%E2%80%99s%20Sustainability%20through%20Biomass&linknote="><i class="fa-2x fa-brands fa-telegram"></i></a>
+            <a href="https://www.addtoany.com/add_to/facebook?linkurl=https%3A%2F%2Fbiobiz.in%2F&linkname=BioBiz%20-%20Accelerating%20India%E2%80%99s%20Sustainability%20through%20Biomass&linknote="> <i class="fa-2x fa-brands fa-facebook"></i></a>
+            <a href="https://www.addtoany.com/add_to/whatsapp?linkurl=https%3A%2F%2Fbiobiz.in%2F&linkname=BioBiz%20-%20Accelerating%20India%E2%80%99s%20Sustainability%20through%20Biomass&linknote="> <i class="fa-2x fa-brands fa-whatsapp"></i></a>
+            <a href="https://www.addtoany.com/add_to/linkedin?linkurl=https%3A%2F%2Fbiobiz.in%2F&linkname=BioBiz%20-%20Accelerating%20India%E2%80%99s%20Sustainability%20through%20Biomass&linknote="><i class="fa-2x fa-brands fa-linkedin"></i></a>
+            <a href="https://www.addtoany.com/add_to/email?linkurl=https%3A%2F%2Fbiobiz.in%2F&linkname=BioBiz%20-%20Accelerating%20India%E2%80%99s%20Sustainability%20through%20Biomass&linknote="> <i class="fa-2x fa-regular fa-envelope"></i></a>
+          </div>
+          <p class="col-lg my-4">&copy; 2024 BioBiz. All rights reserved.</p>
+          <nav class="footer-nav col-lg">
+            <a href="#privacy" class="text-white mx-2">Privacy Policy</a>
+            <a href="#terms" class="text-white mx-2">Terms of Service</a>
+          </nav>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Bootstrap JS (from CDN for better performance) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js" defer></script>
+  </body>
+</html>
